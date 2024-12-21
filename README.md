@@ -1,2 +1,2 @@
-I try to project of what I learn on daily basis 
-so here you will see all the mini project build on Html, Css and JavaScript
+Here you will see all the mini project build on Html, Css and JavaScript.
+I will try to make various type of projects on topics that I'll learn.
