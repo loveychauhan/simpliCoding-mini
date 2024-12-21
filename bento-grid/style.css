@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  justify-content: center;
+  font-family: Dm sans;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  line-height: 1;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.grid1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card {
+  max-width: 180px;
+  border-radius: 12px;
+  padding: none;
+}
+.card1 p {
+  font-size: 1.8rem;
+}
+.card img {
+  max-width: 9rem;
+}
+
+.card1 {
+  background-color: #faeee2;
+  padding: 2.5rem 0.8rem;
+}
+p .highlight {
+  color: #7554ca;
+  font-style: italic;
+}
+.card1 button {
+  background-color: #ffcc69;
+  border: none;
+  color: #875fb0;
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-block: 1.5rem;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 24rem;
+  background-color: #7651dc;
+  padding: 1.5rem;
+}
+.card2 h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  color: white;
+  font-weight: 500;
+}
+
+.card2 p {
+  font-size: 14px;
+  color: white;
+  margin: 0.8em;
+  letter-spacing: 1.5px;
+}
+.card2 span {
+  color: #ffcc69;
+}
+
+.merge {
+  display: flex;
+  align-items: stretch;
+  /* justify-content: space-between; */
+  margin-top: 1rem;
+  /* gap: 1.5rem; */
+  justify-content: space-between;
+}
+
+.card5 {
+  background-color: #ffffff;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  padding: 1em;
+  font-weight: 500;
+}
+.card5 img {
+  max-width: 14rem;
+  margin: 0.5rem 1rem;
+}
+
+.card6 {
+  background-color: #ffcc69;
+  font-size: 12px;
+  line-height: 1;
+  padding: 1em 1em 0 1em;
+  overflow: hidden;
+}
+
+.card6 img {
+  max-width: 100%;
+  /* margin: 1em 0.5em 0 0.5em; */
+  position: relative;
+  align-self: center;
+  /* display: flex; */
+  margin-top: 1em;
+  bottom: 0px;
+  margin-bottom: -52px;
+}
+.card3 {
+  background-color: #dcd1fc;
+  padding: 3em 1em  ;
+  height: 415px;
+  font-size: 0.7rem;
+}
+
+.card3 img {
+  margin-block: 1rem;
+}
+
+.card3 p {
+  font-weight: 500;
+  line-height: 1;
+}
+.card3 :last-child {
+  font-size: 1rem;
+}
+
+.card4 {
+  background-color: #ffcc69;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card4 p {
+  font-size: 1.8em;
+  /* margin-block: 1em; */
+}
+.card4 img {
+  margin-top: 3em;
+}
+
+.card7 {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.card7 h1 {
+  font-size: 3em;
+  color: #000;
+  margin: 0px;
+}
+
+.card7 p {
+  font-size: 14px;
+}
+.card7 img {
+  max-width: 8em;
+  margin-top: 1em;
+}
+
+.card8 {
+  display: flex;
+  background-color: #7651dc;
+  max-width: 380px;
+  align-items: center;
+}
+.card8 img {
+  max-width: 10em;
+  margin: 1em;
+}
+.card8 p {
+  font-size: 1.5em;
+  /* margin: 1rem; */
+  color: white;
+  font-weight: 500;
+}
+
+.card-container2 {
+  display: flex;
+}
+
+.flex-card3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 1em;
+}
+
+.grid2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 760px) {
+  .card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card img {
+    max-width: 15em;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 0.8em;
+  }
+  .flex-card3 {
+    flex-direction: column;
+  }
+  .merge {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .card8 {
+    flex-direction: column;
+    padding: 1em;
+  }
+  p {
+    text-align: center;
+    padding-inline: 2.5em;
+  }
+  .grid1 {
+    gap: 1em;
+  }
+  .merge .card {
+    padding: 3em;
+  }
+}
+
+@media (max-width: 376px) {
+  .card {
+    max-width: 340px;
+  }
+}
