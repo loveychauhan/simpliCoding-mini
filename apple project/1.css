@@ -1,0 +1,23 @@
+.square{
+    background-color: blue;
+    border: 10px solid red;
+    width: 300px;
+    height: 300px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+@media only screen and (max-width:670px){
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+}
