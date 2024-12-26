@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px
+}
+.mongo,
+.express,
+.react,
+.node {
+  font-size: 36px;
+}
+.tooltip-container {
+  max-width: 518px;
+  width: 100%;
+  border-radius: 19px;
+  font-family: "Nunito", serif;
+  border: 2px solid white;
+
+}
+.tool-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-height: 237px;
+  align-items: end;
+  justify-items: center;
+}
+.detail {
+  max-width: max-content;
+  background-color: #47a248;
+  color: white;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  position: relative;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.tip {
+  width: 10px;
+  height: 10px;
+  background-color: #47a248;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: -4px;
+}
+.detail p {
+  font-size: 14px;
+  margin: 0;
+}
+.mongo {
+  color: #47a248;
+}
+
+.express {
+  color: #ffffff;
+  margin-top: 45px;
+}
+.react {
+  color: #61dafb;
+}
+.node {
+  color: #8cc84b;
+}
+
+.tooltip {
+  text-align: center;
+  min-height: 220px;
+}
+.tooltip img,
+p {
+  cursor: pointer;
+}
+
+.express-tooltip img {
+  margin-top: 8px;
+}
+.express-tooltip .detail {
+  background-color: white;
+  color: black;
+}
+.express-tooltip .tip {
+  background-color: white;
+}
+.react-tooltip .detail {
+  background-color: #61dafb;
+  color: black;
+}
+.react-tooltip .tip {
+  background-color: #61dafb;
+}
+.node-tooltip .detail {
+  background-color: #8cc84b;
+  color: black;
+}
+.node-tooltip .tip {
+  background-color: #8cc84b;
+}
+
+.tooltip:has(img:hover, p:hover) > .detail {
+  opacity: 100;
+}
+
+.tooltip-container:has(.mongo-tooltip img:hover, .mongo-tooltip p:hover) {
+  border: 2px solid #47a248;
+}
+.tooltip-container:has(.mongo-tooltip img:hover, .mongo-tooltip p:hover) {
+  border: 2px solid #47a248;
+}
+.tooltip-container:has(.react-tooltip img:hover, .react-tooltip p:hover) {
+  border: 2px solid #61dafb;
+}
+.tooltip-container:has(.node-tooltip img:hover, .node-tooltip p:hover) {
+  border: 2px solid #8cc84b;
+}
