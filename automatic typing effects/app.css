@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+
+}
+.fixed-text {
+  font-size: 36px;
+  height: 36px;
+}
+.dynamic-text{
+   display: inline-flex;
+   align-items: center;
+   color: brown;
+}
+.dynamic-text::after{
+    display: inline-block;
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: brown;
+    margin-left: 4px;
+}

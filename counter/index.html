@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Gill Sans MT';
+        }
+        button{
+            max-width: max-content;
+            padding: 8px;
+            color: black;
+            background-color: cyan;
+            margin-inline:12px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        #number{
+            width: 48px
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 id="display"></h1>
+    <div class="buttonsContainer">
+        <button id="subtract">-</button>
+        <button id="add">+</button>
+    </div>
+    <p>increment/decrement : by <input id="number" type="number"> </p>
+    <button id="reset">Reset</button>
+    <script src="app.js"></script>
+</body>
+
+</html>

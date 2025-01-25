@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding-inline: 1rem;
+  font-family: poppins;
+}
+.bill-detail {
+  max-width: 300px;
+  width: 100%;
+}
+.display {
+  margin-left: 1rem;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgb(52, 86, 139);
+  padding: 2rem 1rem;
+  border-radius: 12px;
+}
+.tip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  gap: 8px;
+  margin-block: 8px 1rem;
+  color: whitesmoke;
+}
+.tip span {
+  padding: 8px 0;
+  border: 2px solid rgb(156, 96, 255);;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(156, 96, 255);
+  text-align: center;
+}
+.tip span::after {
+  content: "%";
+}
+.tip span:hover {
+  background-color: rgb(119, 71, 196);
+}
+
+.tip span:focus-within{
+    border: 2px solid orange;
+}
+
+
+.fade .tip span{
+    border:  rgba(101, 24, 215, 0.456);
+    background-color:  rgba(101, 24, 215, 0.456);
+    cursor: not-allowed;
+}
+.fade .tip span:hover{
+    background-color:  rgba(101, 24, 215, 0.456);
+}
+.fade .generate-bill{
+    background-color:  rgba(101, 24, 215, 0.456);
+    cursor: not-allowed;
+}
+.fade .generate-bill:hover{
+    background-color:  rgba(101, 24, 215, 0.456);
+}
+
+.custom-tip {
+  grid-column: span 3;
+  background-color: darkgray;
+  outline: none;
+  border: none;
+  padding: 5px;
+  color: inherit;
+}
+label {
+  border: 1px solid black;
+  padding: 5px;
+  display: block;
+  margin-bottom: 1rem;
+}
+.bill-amount {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+.total-person {
+  display: block;
+  background-color: darkgray;
+  outline: none;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  margin: 8px 0;
+}
+.generate-bill {
+  width: 100%;
+  background-color: rgb(156, 96, 255);
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.generate-bill:hover{
+    background-color: rgb(119, 71, 196);
+}
+.title {
+  color: white;
+  font-weight: 600px;
+  margin-right: 8px;
+}
+
+.display p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.reset {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-block: 1rem;
+  cursor: pointer;
+}

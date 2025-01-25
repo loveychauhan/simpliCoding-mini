@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="bill-detail fade ">
+            <p>Bill</p>
+            <label>
+                <span>&#8377</span>
+                <input type="number" class="bill-amount">
+            </label>
+            <p>Select Tip</p>
+            <div class="tip ">
+                <span>5</span>
+                <span>10</span>
+                <span>15</span>
+                <span>25</span>
+                <span>50</span>
+                <span>50</span>
+                <input type="number" placeholder="Custom tip" class="custom-tip" disabled>
+            </div>
+            <p>Number Of People</p>
+            <input type="number" class="total-person">
+            <button class="generate-bill">Generate Bill</button>
+        </div>
+        <div class="display">
+            <p class="tip-display">
+                <span class="title">Tip </span>
+                <span class="tip-amount"></span>
+            </p>
+            <p class="total-display">
+                <span class="title">Total</span>
+                <span class="totalBill"></span>
+            </p>
+            <p class="each-person-bill">
+                <span class="title">Each person bill</span>
+                <span class="each-split"></span>
+            </p>
+            <button class="reset">Reset</button>
+        </div>
+    </main>
+</body>
+
+</html>
