@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast message</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Toast PopUp</h1>
+        <select id="horizontal-position">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+        <select id="vertical-position">
+            <option value="top">Top</option>
+            <option value='bottom'>Bottom</option>
+        </select>
+        <select id="toast-type">
+            <option value="success">Success</option>
+            <option value="error">Error</option>
+            <option value="warning">Warning</option>
+            <option value="info">Info</option>
+        </select>
+        <input type="text" value="This is a toast message" class="toast-message">
+        <div class="duration-container">
+            <label for="duration">Duration:</label>
+            <input type="range" id="duration" min="2" max="10" value="4">
+        </div>
+
+        <button class="show-toast">Show Toast</button>
+    </div>
+    <div class="toast-container">
+
+    </div>
+
+
+</body>
+
+</html>

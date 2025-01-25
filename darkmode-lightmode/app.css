@@ -1,0 +1,27 @@
+body{
+    font-family: 'Segoe UI';
+    min-height: 100vh;
+}
+
+.on-dark-body{
+    background-color: rgb(43, 43, 43);
+    color:rgb(232, 231, 231);
+}
+.on-dark-container{
+    background-color: rgb(43, 43, 43);
+    color:rgb(232, 231, 231);
+    border: 1px solid blue;
+}
+
+#details{
+    padding: 12px;
+    border: 1px solid blue;
+}
+.p-styles{
+    color: rgb(43, 43, 43);
+    background-color:rgb(255, 255, 255);
+}
+
+#container{
+    margin-top: 2rem;
+}

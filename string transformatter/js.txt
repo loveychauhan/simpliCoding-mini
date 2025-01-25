@@ -1,0 +1,63 @@
+
+// stringFormatter()
+// function stringFormatter(){
+//     let text = input.value
+//     for(let label of labels){
+//         if(label.innerText === 'Lower Case') label.nextElementSibling.innerText = text.toLowerCase()
+//         if(label.innerText === 'Upper Case') label.nextElementSibling.innerText = text.toUpperCase()
+//         if(label.innerText === 'Snake Case'){
+//             label.nextElementSibling.innerText = text.replaceAll('  ','_')
+//             }
+//         if(label.innerText === 'Kebab Case'){
+//             label.nextElementSibling.innerText = text.replaceAll('  ','-')
+//             }
+//         if(label.innerText === 'Trim'){
+//             label.nextElementSibling.innerText = text.replaceAll('  ','')
+//             }
+    
+//         if(label.innerText === 'Camel Case'){
+//             let arrCamelCase = forCamel(text)
+//              label.nextElementSibling.innerText = arrCamelCase.join('')
+//             }
+//         if(label.innerText === 'Pascal Case'){
+//             let arrPascalCase = forPascal(text.trim())
+//                 if(text) label.nextElementSibling.innerText = arrPascalCase.join('') 
+//                 else label.nextElementSibling.innerText = ''
+//             }
+   
+    
+//     }
+// }
+
+
+
+functions 
+function forKebab(text){
+//     if(text){
+//         if(text === ' '){
+//             return '-'
+//         }else{
+//             return text.replaceAll(' ','-')
+//         }
+//     }
+//     return ''
+
+// }
+// function forSnake(text){
+//     if(text){
+//         if(text === ' '){
+//             return '_'
+//         }else{
+//             return text.replaceAll(' ','_')
+//         }
+//     }
+//     return ''
+
+// }
+// function forTrim(text){
+//     if(text){
+//         return text.replaceAll(' ','')
+//     }
+//     return ''
+
+// }

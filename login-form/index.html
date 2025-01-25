@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dialog box</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1 class="nav-header">LOGO</h1>
+        <div class="navigations fig">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Service</a>
+            <a id="a-login" href="/">Login</a>
+        </div>
+        <div class="nav-svgs">
+            <img class="hamburger" src="hamburger-svgrepo-com.svg" alt="">
+            <img class="nav-cross cross fig" src="cross-svgrepo-com.svg"">
+        </div>
+        
+
+    </nav>
+    <main>
+        <div class="dialog-box">
+            <img class="cross" src="cross-svgrepo-com.svg"">
+            <h1 class="header">LOGIN</h1>
+            <form class="inputs">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <div class="svgs">
+                        <img class="email-svg" src="mail-alt-3-svgrepo-com.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <div class="svgs">
+                        <img class="passlock-svg" src="lock-privacy-svgrepo-com.svg" alt="">
+                        <img class="passunlock-svg" src="lock-slash-svgrepo-com.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="functions">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <p class="forgot">Forgot password?</p>
+                </div>
+
+                <button class="submit">LOGIN</button>
+            </form>
+            <p class="form-footer">Don't have and account?<b> Register.</b></p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

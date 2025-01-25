@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <style>
+        body{
+            text-align: center;
+            font-family:  Roboto, sans-serif;
+            padding: 12px;
+            background-color: beige;
+            
+        }
+        .heading{
+            color: white;
+            text-shadow:0 5px 5px black;
+            
+        }
+        .btn button{
+            background-color: rgb(0, 255, 255);
+            padding: 12px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 1px solid;
+            box-shadow:0 5px 5px cyan;
+        }
+        input{
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            max-width: 15rem;
+            width: 100%;
+        }
+        input:disabled,button:disabled{
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Enter a number between 0 and 100 </h1>
+    <form id="form">
+        <input id="input" type="number" placeholder="Enter a number" required max="100">
+        <div class="btn">
+            <button id="sub-btn">Submit</button>
+            <button type="button" id="restart" disabled>Restart</button>
+        </div>
+    </form>
+    <p id="result"></p>
+    <p id="guess"></p>
+    <script src="app.js"></script>
+</body>
+
+</html>

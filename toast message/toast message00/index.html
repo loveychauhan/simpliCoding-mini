@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast message</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <select class="lr-position">
+            <option>Left</option>
+            <option>Right</option>
+        </select>
+        <select class="tb-position">
+            <option>Top</option>
+            <option>Bottom</option>
+        </select>
+        <select class="toast-type">
+            <option>Warning</option>
+            <option>Success</option>
+            <option>Error</option>
+            <option>Info</option>
+        </select>
+        <input type="text" class="toast-message" value="This is a toast meassage">
+        <div class="duration-slider"><span>Duration:</span><input class="slider" type="range"></div>
+        <button class="generate-toast">Toast</button>
+    </main>
+    <div class="toast cross">
+        <span class="message-icon">&check;</span>
+        <p class="message-input">This is a demo container</p>
+        <span class="cross">&cross;</span>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+:root{
+    --dark-bg-color: rgb(22, 18, 18);
+    --dark-font-color: rgb(230, 217, 217);
+    --dark-main-color: rgb(46, 38, 38);
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 100vw;
+}
+body.dark{
+    background-color: var(--dark-bg-color);
+}
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 24px
+}
+body.dark main{
+    background-color: var(--dark-main-color);
+    color: var(--dark-font-color);
+}
+body.dark .log{
+    background-color: var(--dark-bg-color);
+}
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: gray;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+.make-note{
+    background-color: #007bff;
+}
+.log {
+  width: 100%;
+  padding:8px 12px;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.log button{
+    background-color: rgb(231,76,60);
+    margin: 0;
+}
+.log:has(.remove){
+    display: none;
+}
+
+.alert{
+    color: red;
+}
+.alert.hide{
+    display: none;
+}

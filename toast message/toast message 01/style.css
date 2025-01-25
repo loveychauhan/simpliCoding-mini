@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: Nunito;
+  margin: 0;
+}
+.container {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 16px;
+}
+select,
+input[type="text"],
+button {
+  font: inherit;
+  padding: 8px;
+}
+button {
+  cursor: pointer;
+}
+.duration-container {
+  display: flex;
+  align-items: center;
+}
+#duration {
+  flex-grow: 1;
+}
+.toast {
+  padding: 0.5rem;
+  color: white;
+  animation: fromLeft 0.1s ease-in;
+}
+.toast-container.right .toast{
+  animation: fromRight 0.1s ease-in;
+}
+.toast-container.right .toast.go-right{
+  animation: goRight 0.1s ease-in forwards;
+}
+.toast.go-left {
+  animation: goLeft 0.1s ease-out forwards;
+}
+.toast span {
+  cursor: pointer;
+}
+
+.toast.success {
+  background-color: rgb(24, 181, 24);
+}
+.toast.error {
+  background-color: rgb(212, 53, 53);
+}
+.toast.warning {
+  background-color: rgb(255, 111, 0);
+}
+.toast.info {
+  background-color: rgb(77, 64, 64);
+}
+
+.toast.success::before {
+  content: "✓";
+}
+.toast.error::before {
+  content: " !";
+}
+.toast.warning::before {
+  content: "⚠";
+}
+.toast.info::before {
+  content: "ⓘ";
+}
+
+.toast-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  top: 1rem;
+  left: 0rem;
+  overflow: hidden;
+  padding:0 1rem ;
+  border-radius: 4px;
+}
+.toast-container.right {
+  left: auto;
+  right: 0rem;
+}
+.toast-container.bottom {
+  top: auto;
+  bottom: 1rem;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes goLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes goRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

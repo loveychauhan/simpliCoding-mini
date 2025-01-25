@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* margin: 0; */
+  max-width: 100vw;
+  min-height: 90vh;
+}
+main {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+main div {
+  width: 150px;
+  height: 150px;
+  border: 5px solid red;
+  background-image: url(images/drum.png);
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  font-size: 64px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.pa{
+    background-image: url(images/snare.png);
+}
+.da{
+    background-image: url(images/crash.png);
+}
+.ni{
+    background-image: url(images/kick.png);
+}
+main div:active{
+    transform: scale(1.1);
+}

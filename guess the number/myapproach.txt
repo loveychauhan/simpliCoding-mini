@@ -1,0 +1,70 @@
+// html
+<body>
+    <p>Enter a number between 0 and 100 </p>
+    <input id="number" type="number" placeholder="Enter a number" max="100" required autofocus autocomplete="off" >
+    <button id="submit">Submit</button>
+    <button id="startGame">Start</button>
+    <p id="display"></p>
+    <p id="guesses"></p>
+    <script src="app.js"></script>
+</body>
+
+// js
+const submit = document.querySelector('#submit')
+const startGame = document.querySelector('#startGame')
+const display = document.querySelector('#display')
+const rand = Math.floor(Math.random() * 100) + 1 
+let guessNumber = document.querySelector('#guesses')
+const guesses = []
+let usrNumber = document.querySelector('#number')
+
+
+submit.addEventListener('click',function(){
+    if(usrNumber.value) guess(parseInt(usrNumber.value))
+        else alert('Enter value')
+    usrNumber.value = ''
+})
+
+
+startGame.style.backgroundColor = 'rgb(41, 166, 207)';
+const guess = (usrNumber) =>{
+    console.log(rand)
+    if(usrNumber !== rand){
+        if(usrNumber < rand){
+            display.innerHTML = `number too low`
+            guesses.push(usrNumber)
+            guessNumber.innerHTML = `Your guess: ${guesses}`
+        }
+        else if(usrNumber > rand){
+            display.innerHTML = `number too high`
+            guesses.push(usrNumber)
+            guessNumber.innerHTML = `Your guess: ${guesses}`
+        }
+
+    }
+    else{
+        display.innerHTML = `You won ${rand}`
+        guesses.push(usrNumber)
+        guessNumber.innerHTML = `Your guess: ${guesses}`;
+        submit.style.backgroundColor = 'rgb(41, 166, 207)'
+        begin();
+        
+    }
+}
+
+function begin(){
+        startGame.style.backgroundColor = 'cyan'
+        usrNumber.classList.add('cursor-block')
+        submit.classList.add('cursor-block')
+        startGame.addEventListener('click',function(){
+        display.innerHTML = ''
+        guessNumber.innerHTML = ''
+        guesses.length = 0
+        startGame.style.backgroundColor = 'rgb(41, 166, 207)'
+        submit.style.backgroundColor = 'cyan'
+        usrNumber.classList.remove('cursor-block')
+        submit.classList.remove('cursor-block')
+    })
+}
+
+
