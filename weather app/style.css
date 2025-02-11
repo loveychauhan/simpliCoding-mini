@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: white;
+  width: 100vw;
+  margin: 0;
+  padding: 0 12px;
+}
+main {
+  max-width: 400px;
+  background: linear-gradient(to left, rgb(1, 251, 197), teal);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+}
+.search-field {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.user-input {
+  max-width: 300px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  font: inherit;
+  border-radius: 16px;
+}
+.search-icon-container {
+  width: 50px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.search-icon {
+  width: 15px;
+}
+.feature-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.climateImg {
+  width: 100px;
+  margin-block: 12px;
+}
+
+.temp {
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+}
+.location {
+  margin: 8px;
+}
+.extra-feature {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.extra-feature img {
+  width: 40px;
+}
+.extra-feature p {
+  margin: 8px;
+  text-align: end;
+}
+
+@keyframes skeleton {
+  0% {
+    background: linear-gradient(
+      to left,
+      rgb(193, 255, 242),
+      rgb(148, 148, 148)
+    );
+  }
+  100% {
+    background: linear-gradient(
+      to left,
+      rgb(255, 255, 255) rgb(145, 151, 151) al
+    );
+  }
+}
