@@ -8,7 +8,8 @@ Built with
 Semantic HTML5 markup
 CSS custom properties
 Flexbox
-Mobile-first workflow
+Mobile-first workflow.
+
 What I learned
 I learned more about CSS
 
