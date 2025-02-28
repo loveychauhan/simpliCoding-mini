@@ -1,0 +1,29 @@
+/* section{
+    min-height: 100vh;
+} */
+#page2 {
+  background-size: 600px;
+  background-position-y: 150px;
+}
+#about-us {
+  background-position-y: -100px;
+}
+#header{
+    top: 40px;
+}
+
+@media (max-width: 768px) {
+    #about-us{
+        background-position-y: -150px;
+    }
+}
+@media (max-width: 532px) {
+    #about-us{
+        background-position-y: -250px;
+    }
+}
+@media (max-width: 460px) {
+    #about-us{
+        background-position-y: -300px;
+    }
+}

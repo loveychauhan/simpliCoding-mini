@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.section-container {
+  @apply px-6 md:px-12 max-w-[1440px] mx-auto;
+}
+
+.make-flex-col{
+    @apply flex items-center justify-evenly flex-col
+}
