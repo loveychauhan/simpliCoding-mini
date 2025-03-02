@@ -1,0 +1,12 @@
+section {
+  max-width: 900px;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 2rem;
+  cursor: pointer;
+}
