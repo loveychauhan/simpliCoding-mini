@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  background-color: #fcf1c6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  color: black;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  position: relative;
+}
+.hero {
+  width: 100%;
+  position: relative;
+}
+.top-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.left {
+  max-width: 200px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.right {
+  max-width: 200px;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.center {
+  max-width: 600px;
+  width: 100%;
+  margin-top: -30px;
+}
+.para > h1 {
+  text-align: center;
+  color: #d32f2f;
+}
+.greeting {
+  color: rgba(0, 0, 0, 0.89);
+  text-align: center;
+  font-weight: 200;
+  margin-block: 1rem;
+}
+.banner {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  width: 100%;
+  background-color: #ffffe0;
+  margin-bottom: 10px;
+}
+.banner .fact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  padding-block: 10px;
+}
+.caretUp {
+  transition: all 0.2s ease-in-out;
+}
+.question {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.dropdown {
+  font-size: 14px;
+  margin-top: 5px;
+  max-height: 0px;
+  font-weight: 400;
+  color: rgb(28, 15, 0);
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.question input {
+  position: absolute;
+  opacity: 0;
+}
+
+.question:has(input:checked) .caretUp {
+  transform: rotate(180deg);
+}
+.question:has(input:checked) + .dropdown {
+  max-height: 100px;
+  opacity: 100;
+}
+
+.music {
+  background-color: #fcf1c6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.music audio {
+  max-width: 300px;
+  height: 40px;
+  border: 2px solid #0000ff;
+  border-radius: 10px;
+  margin-block: 1rem;
+}
+.breaker {
+  text-align: center;
+  margin-block: 1rem;
+}
+.resolution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  margin-top: 1rem;
+  max-width: 300px;
+  width: 100%;
+}
+.resolution input,
+button {
+  width: 600px;
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.resolution ul {
+  min-height: 200px;
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  margin-block: 12px;
+  padding: 2rem;
+}
+.conclusion {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.snowfall{
+    position: relative;
+    min-height:100%;
+}
+.snowflake{
+    --small: 3px;
+    --medium:7px;
+     width: var(--small);
+     height: var(--medium);
+     position: absolute;
+     background-color: #ffffff;
+     border-radius: 50%;
+     animation: snow 6s linear infinite,
+     wind 10s ease-in-out infinite ;
+     top: 10;
+}
+.snowflake:nth-child(2n+3){
+    width: var(--medium);
+    height: var(--medium);
+}
+.snowflake:nth-child(1){
+    left: 25%;
+    animation-delay:1s ;
+}
+.snowflake:nth-child(2){
+    left: 40%;
+    animation-delay:4s ;
+}
+.snowflake:nth-child(3){
+    left: 60%;
+    animation-delay:4s ;
+}
+.snowflake:nth-child(4){
+    left: 70%;
+    animation-delay:10s ;
+}
+.snowflake:nth-child(5){
+    left: 60%;
+    animation-delay:4s ;
+}
+.snowflake:nth-child(6){
+    left: 25%;
+    animation-delay:7s ;
+}
+.snowflake:nth-child(7){
+    left: 25%;
+    animation-delay:2s ;
+}
+.snowflake:nth-child(8){
+    left: 25%;
+    animation-delay:6s ;
+}
+.snowflake:nth-child(9){
+    left: 70%;
+    animation-delay:10s ;
+}
+.snowflake:nth-child(10){
+    left: 60%;
+    animation-delay:4s ;
+}
+.snowflake:nth-child(11){
+    left: 25%;
+    animation-delay:7s ;
+}
+.snowflake:nth-child(12){
+    left: 25%;
+    animation-delay:2s ;
+}
+.snowflake:nth-child(13){
+    left: 25%;
+    animation-delay:6s ;
+}
+
+@keyframes snow{
+    100%{
+        top: 100%;
+    }
+}
+@keyframes wind{
+    50%{
+       transform: translateX(120px);
+    }
+}
+@media (max-width:720px) {
+    .center2{
+        display: none;
+    
+    }
+    .right,.left{
+        width: 150px;
+    }
+    .hero{
+        padding: 8px;
+    }
+}
