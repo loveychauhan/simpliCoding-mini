@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="title">
+                <img src="images/logo.svg" alt="">
+                <p>SimpliCoding</p>
+            </div>
+            <div class="navigation-menu">
+                <p>Home</p>
+                <label class="dropdown">
+                    <p>Skills</p>
+                    <img class="crateup" src="images/dropdown.svg" alt="">
+                    <input type="checkbox">
+                    <div class="drop-items-container">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Glossary/Python" target="_blank">Python</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+                            target="_blank">Responsive Design</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank">Web
+                            Development</a>
+                    </div>
+                </label>
+                <p class="about">About</p>
+                <p>Contact</p>
+            </div>
+            <div class="user">
+                <img src="images/user.svg" alt="">
+                <p>Lovey Singh Chauhan</p>
+            </div>
+            <div class="hamburger">
+                <label for="mobile">
+                    <img src="images/Hamburger.svg" alt="">
+                    <input id="mobile" type="checkbox">
+                </label>
+                <div class="drop-items">
+                    <div class="profile">
+                        <img  class="user-img" src="images/user.svg" alt="">
+                        <p>Lovey Singh Chauhan</p>
+                        <label for="mobile">
+                            <input id="mobile" class="cross-checkbox" type="checkbox">
+                            <img class="cross" src="images/cross.svg" alt="">
+                        </label>
+                    </div>
+                    <div class="new-nav">
+                        <p>Home</p>
+                        <label class="dropdown">
+                            <div class="skills-menu">
+                                <p>Skills</p>
+                                <img class="crateup" src="images/dropdown.svg" alt="">
+                            </div>
+                            <input type="checkbox">
+                            <div class="drop-items-container">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                    target="_blank">JavaScript</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/Python"
+                                    target="_blank">Python</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+                                    target="_blank">Responsive Design</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+                                    target="_blank">Web Development</a>
+                            </div>
+                        </label>
+                        <p>About</p>
+                        <p>Contact</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </main>
+</body>
+
+</html>
