@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+main{
+    max-width: 300px;
+    border: 1px solid rgb(72, 141, 241); 
+    overflow: hidden;
+    border-radius: 8px;
+}
+.dropdown{
+  
+    position: relative;  
+}
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.7rem;
+  
+    
+}
+
+.faq input{
+    position: absolute;
+    opacity: 0;
+}
+.faq:hover{
+    background-color: aliceblue;
+}
+
+.drop-icon{
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+}
+.faq:has(input:checked) .drop-icon{
+    transform: rotate(45deg);
+}
+.menu{
+    padding: 0 0.7rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid rgb(72, 141, 241); 
+}
+
+main:last-child{
+    border-bottom: none;
+}
+
+.dropdown:has(input:checked) .menu{
+    max-height: 300px;
+ 
+}
+.faq:has(input:checked){
+    background-color: rgb(231, 241, 255);
+    border-bottom: 1px solid rgb(72, 141, 241); 
+}
